@@ -1,0 +1,50 @@
+Q1- What is Emmet?
+Ans : Emmet is a plugin (toolkit)for many popular text editors which greatly improves the web development workflow.
+Emmet uses different abbreviations and short expressions depending on what's passed, and then dynamically converts the abbreviations into the full code.
+
+
+Q2 : Difference between a Library and Framework?
+Ans: Libraries provide developers with predefined functions and classes to make their work easier and boost the development process.
+    Framework, on the other hand is like the foundation upon which developers build applictions for specific plateform.
+
+Q3 : What is CDN? Why do we use it?
+Ans : CDN - Content Delivery Network. It improves efficiency by introducing intermediary server between client and website servers. 
+    It manages some of the client-server communications. It helps improves the page load times and makes it faster.
+Q4 : Why is React known as React?
+Ans : React (also k/a React.js or React.JS) is a free and open-source frontend JavaScript library for buildig User interfaces based on component.
+    It's known as React because it reacts. It was developed by Facebook (a site that CONSTANTLY updates their data) to improve 
+    the user interface development and more effectively change (REACT to) what the user sees when they're doing things like mouse clicking, 
+    submitting and typing.
+
+Q5 : What is crossorigin in script tag?
+Ans : The crossorigin attributes sets the mode of an request to an HTTP CORS Request. Web Pages often makes requestto load resources on other servers.
+    CORS is used to manage cross origin request.
+CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page to be requested from another domain outside their own domain.
+It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request. 
+CORS allows servers to specify who can access the assets on the server, among many other things.
+
+Q6 : Difference between React and ReactDOM ? 
+Ans :React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+    ReactDOM is used to render components and elements on the web. It is a part of the React library used to create user 
+    interfaces and dynamic web applications, as well as reusable and composable components that can be used in different applications.
+
+Q6 : What is difference between react.development.js and react.production.js files via CDN?
+Ans : The development build is used - as the name suggests - for development reasons. 
+    You have Source Maps, debugging and often times hot reloading ability in those builds.
+    The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
+
+Q7 : Difference between Async and Defer?
+Ans : The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM. 
+    The script loads “in the background”, and then runs when the DOM is fully built.    
+    In other words:
+    Scripts with defer never block the page.
+    Scripts with defer always execute when the DOM is ready (but before DOMContentLoaded event).
+
+    Async:
+    The async attribute means that a script is completely independent:
+        The browser doesn’t block on async scripts (like defer).
+        Other scripts don’t wait for async scripts, and async scripts don’t wait for them.
+        DOMContentLoaded and async scripts don’t wait for each other:
+        DOMContentLoaded may happen both before an async script (if an async script finishes loading after the page is complete)
+        …or after an async script (if an async script is short or was in HTTP-cache)
+
