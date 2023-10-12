@@ -1869,13 +1869,14 @@ const burgerKing = {
   cuisines: ["Burger", "American"],
   rating: "4.2",
 };
-const RestaurantCard = () => {
+const RestaurantCard = ({ restaurant }) => {
+  console.log(restaurant);
   return (
     <div className="card">
       <img
         src={
           "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-          restaurantList[0].data?.cloudinaryImageId
+          restaurant.data?.cloudinaryImageId
         }
       />
       <h2>{restaurantList[0].data?.name}</h2>
@@ -1888,36 +1889,10 @@ const RestaurantCard = () => {
 const Body = () => {
   return (
     <div className="restaurant-list">
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
-      <RestaurantCard />
+      {/* passing props into restaurant card */}
+      <RestaurantCard restaurant={restaurantList[0]} />
+      <RestaurantCard restaurant={restaurantList[1]} />
+      <RestaurantCard restaurant={restaurantList[2]} />
       <RestaurantCard />
       <RestaurantCard />
       <RestaurantCard />
